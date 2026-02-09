@@ -1,10 +1,8 @@
-export default function AdminPage() {
+export default function Page() {
   return (
-    <main className="p-8">
-      <h1 className="text-3xl font-bold mb-4">Admin Dashboard</h1>
-      <p className="text-muted-foreground">
-        System metrics and exports are available here.
-      </p>
+    <main style={{ padding: 32 }}>
+      <h1>Admin Dashboard</h1>
+      <p>Admin metrics live here.</p>
     </main>
   )
 }
