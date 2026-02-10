@@ -1,36 +1,147 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 AI Customer Inbox & Workflow Router (SaaS MVP)
 
-## Getting Started
+An AI-ready customer inbox MVP designed for early-stage SaaS teams to centralize customer messages, reduce manual triage, and speed up response times.
 
-First, run the development server:
+This project demonstrates **end-to-end SaaS MVP delivery** from data modeling and authentication to inbox workflows and admin metrics built with scalability and real-world integrations in mind.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎯 Problem This Solves
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Small SaaS teams receive customer messages from multiple channels (email, forms, chat, etc.) and waste hours every day manually sorting, prioritizing, and assigning them.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Common pain points:
+- Messages scattered across tools  
+- No clear ownership or priority  
+- Slow response times  
+- No visibility into support performance  
 
-## Learn More
+This MVP shows how those problems can be solved with a **unified inbox + workflow system**, ready to be extended with AI and real integrations.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ✨ What This MVP Demonstrates
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### ✅ Core Functionality (Implemented)
+- User authentication (Supabase Auth)
+- Unified inbox UI for conversations
+- Conversation + message data model
+- Agent reply workflow
+- Status & priority handling
+- Admin dashboard with system metrics
+- CSV export of conversations
+- Clean, production-ready database schema
 
-## Deploy on Vercel
+### 🧠 AI-Ready Architecture
+- Designed to plug in AI summarization & classification
+- Conversation-level metadata supports AI outputs
+- Inbound processing via webhook-based architecture
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 📊 Admin Visibility
+- Message volume overview
+- Conversation lifecycle tracking
+- Exportable data for reporting or audits
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🛠️ Tech Stack
+
+**Frontend**
+- Next.js (App Router)
+- TypeScript
+- Tailwind CSS
+- shadcn/ui
+
+**Backend**
+- Next.js API Routes
+- Supabase (Postgres + Auth)
+
+**Architecture**
+- MVP-first, production-friendly structure
+- Webhook-based ingestion design
+- Clean separation of concerns
+
+---
+
+## 🧱 Data Model Overview
+
+- **Conversations**  
+  Stores channel, subject, priority, status, and AI-ready metadata
+
+- **Messages**  
+  Individual messages linked to conversations (user / agent / AI)
+
+- **Profiles**  
+  User accounts with role-based access (agent / admin)
+
+This mirrors real-world support systems used in modern SaaS products.
+
+---
+
+## 🚀 Production Extensions (Planned / Supported)
+
+This MVP is intentionally scoped to be extendable. Typical next steps include:
+
+- Gmail / Google Workspace ingestion  
+- Zoho Mail or Outlook integration  
+- Webhook-based inbound email processing  
+- AI summarization & auto-classification  
+- Auto-assignment based on rules or AI  
+- SLA tracking & notifications  
+
+These features are **designed into the architecture**, not bolted on.
+
+---
+
+## 💼 How Clients Use This
+
+This project is ideal for:
+- SaaS founders validating a support workflow
+- Internal tools for startups
+- MVPs for customer operations platforms
+- AI-first workflow products
+
+Typical customization timeline:
+- **Week 1–2:** Adapt core flows + UI  
+- **Week 3:** Integrations (email, forms, chat)  
+- **Week 4:** AI features, polish, deployment  
+
+---
+
+## 📌 Why This Is a Real MVP (Not a Toy Project)
+
+- Real authentication & database
+- Real workflows, not mock screens
+- Production-style schema & routing
+- Designed for real integrations
+- Built the way SaaS products are actually shipped
+
+This is the same foundation used for real-world SaaS systems without premature over-engineering.
+
+---
+
+## 📬 About the Author
+
+Built by a SaaS-focused developer experienced in:
+- MVP development
+- Internal dashboards
+- Workflow automation
+- Cloud-native architectures
+
+Happy to customize this system for real business use cases.
+
+---
+
+## 📎 Notes for Reviewers
+
+- This repository represents the **MVP layer**
+- External integrations can be enabled during production rollout
+- Focus is on clarity, scalability, and speed to value
+
+---
+
+### ⭐ For Potential Clients
+
+This project demonstrates how your idea can move from  
+**concept → working MVP → scalable production system**  
+without wasting time or budget.
